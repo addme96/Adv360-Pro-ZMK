@@ -34,3 +34,9 @@ label = "macro_kinesis";
 #binding-cells = <0>;
 bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
+macro_screenshot: macro_screenshot{
+compatible = "zmk,behavior-macro";
+label = "macro_screenshot";
+#binding-cells = <0>;
+bindings = <&macro_press &kp LCMD>, <&kp LS(N4)>, <&macro_release &kp LCMD>;
+};
