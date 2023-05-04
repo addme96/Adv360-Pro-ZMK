@@ -44,5 +44,11 @@ macro_find_usages: macro_find_usages{
 compatible = "zmk,behavior-macro";
 label = "macro_find_usages";
 #binding-cells = <0>;
-bindings = <&macro_press &kp RALT>, <&macro_press &kp F7>, <&macro_release &kp F7>;
+bindings = <&macro_press &kp RALT>, <&macro_press &kp F7>, <&macro_release &kp F7>, <&macro_release &kp RALT>;
 };
+macro_open_in_split_pane: macro_open_in_split_pane {
+  compatible = "zmk,behavior-macro";
+  label = "macro_open_in_split_pane";
+  #binding-cells = <0>;
+  bindings = <&macro_press &kp RALT>, <&macro_press &kp T>, <&macro_release &kp T>, <&macro_release &kp RALT>;
+  };
